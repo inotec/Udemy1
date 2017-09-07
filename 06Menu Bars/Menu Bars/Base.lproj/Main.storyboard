@@ -25,26 +25,52 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Nav Bar Demo" id="Axs-VR-j37">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="1Ft-md-Xno">
+                                    <navigationItem title="Egg Timer" id="Axs-VR-j37">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="pause" id="1Ft-md-Xno">
                                             <color key="tintColor" red="0.99278184387715618" green="0.27746277648598971" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
-                                                <action selector="camButt:" destination="BYZ-38-t0r" id="yJV-A2-lLe"/>
+                                                <action selector="pauseButt:" destination="BYZ-38-t0r" id="5TK-QR-I0y"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Hi!" id="QSm-xr-auY"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="QSm-xr-auY">
+                                            <connections>
+                                                <action selector="playButt:" destination="BYZ-38-t0r" id="5ao-NG-A10"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="210" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIB-gW-DQG">
+                                <rect key="frame" x="89" y="236.5" width="142" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="TJC-1r-JMt"/>
+                                    <constraint firstAttribute="height" constant="95" id="aPY-T6-Y0v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ns-xc-Hpt">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="reply" id="YGQ-wU-zwT"/>
+                                    <barButtonItem title="-10" id="YGQ-wU-zwT">
+                                        <connections>
+                                            <action selector="minusTen:" destination="BYZ-38-t0r" id="hiJ-1x-P4c"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="hcc-1a-oTV"/>
-                                    <barButtonItem systemItem="compose" id="BFi-z0-VFc"/>
+                                    <barButtonItem title="Reset" id="BFi-z0-VFc">
+                                        <connections>
+                                            <action selector="resetButt:" destination="BYZ-38-t0r" id="RGM-fB-49R"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="plg-wy-PVG"/>
-                                    <barButtonItem systemItem="trash" id="gro-En-gWw"/>
+                                    <barButtonItem title="+10" id="gro-En-gWw">
+                                        <connections>
+                                            <action selector="plusTen:" destination="BYZ-38-t0r" id="lL3-UC-gLg"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <nil key="barTintColor"/>
@@ -52,10 +78,18 @@
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aIB-gW-DQG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SHm-iU-JLw"/>
+                            <constraint firstItem="aIB-gW-DQG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T1g-2g-MJB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayTime" destination="aIB-gW-DQG" id="pUE-85-ZEE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="22.5" y="-143.66197183098592"/>
         </scene>
     </scenes>
 </document>
