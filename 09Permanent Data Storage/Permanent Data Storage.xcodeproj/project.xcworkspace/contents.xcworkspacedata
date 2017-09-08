@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Table views.xcodeproj">
+      location = "self:Permanent Data Storage.xcodeproj">
    </FileRef>
 </Workspace>

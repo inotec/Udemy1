@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Table views.xcscheme</key>
+		<key>WhatsMyNumber.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D42EA13A1F61CB1400911E73</key>
+		<key>D4AFE5881F6311000018676A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

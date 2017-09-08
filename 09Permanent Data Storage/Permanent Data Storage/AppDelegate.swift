@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Table views
+//  Permanent Data Storage
 //
-//  Created by Barry Keane on 9/7/17.
+//  Created by Barry Keane on 9/8/17.
 //  Copyright © 2017 Inotec. All rights reserved.
 //
 

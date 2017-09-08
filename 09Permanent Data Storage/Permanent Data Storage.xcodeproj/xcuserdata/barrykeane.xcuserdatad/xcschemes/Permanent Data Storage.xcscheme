@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D42EA13A1F61CB1400911E73"
-               BuildableName = "Table views.app"
-               BlueprintName = "Table views"
-               ReferencedContainer = "container:Table views.xcodeproj">
+               BlueprintIdentifier = "D489DF611F630AB500C65EA4"
+               BuildableName = "Permanent Data Storage.app"
+               BlueprintName = "Permanent Data Storage"
+               ReferencedContainer = "container:Permanent Data Storage.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D42EA13A1F61CB1400911E73"
-            BuildableName = "Table views.app"
-            BlueprintName = "Table views"
-            ReferencedContainer = "container:Table views.xcodeproj">
+            BlueprintIdentifier = "D489DF611F630AB500C65EA4"
+            BuildableName = "Permanent Data Storage.app"
+            BlueprintName = "Permanent Data Storage"
+            ReferencedContainer = "container:Permanent Data Storage.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D42EA13A1F61CB1400911E73"
-            BuildableName = "Table views.app"
-            BlueprintName = "Table views"
-            ReferencedContainer = "container:Table views.xcodeproj">
+            BlueprintIdentifier = "D489DF611F630AB500C65EA4"
+            BuildableName = "Permanent Data Storage.app"
+            BlueprintName = "Permanent Data Storage"
+            ReferencedContainer = "container:Permanent Data Storage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D42EA13A1F61CB1400911E73"
-            BuildableName = "Table views.app"
-            BlueprintName = "Table views"
-            ReferencedContainer = "container:Table views.xcodeproj">
+            BlueprintIdentifier = "D489DF611F630AB500C65EA4"
+            BuildableName = "Permanent Data Storage.app"
+            BlueprintName = "Permanent Data Storage"
+            ReferencedContainer = "container:Permanent Data Storage.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
