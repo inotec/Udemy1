@@ -11,35 +11,37 @@ import UIKit
 class SecondViewController: UIViewController, UITextFieldDelegate {
     
     
-    @IBOutlet var itemTextField: UITextField!
+  @IBOutlet var itemTextField: UITextField!
+  
+  @IBAction func add(_ sender: AnyObject) {
     
+    self.addItem(textToAdd: self.itemTextField.text!)
     
-    @IBAction func add(_ sender: AnyObject) {
-        
-        let itemsObject = UserDefaults.standard.object(forKey: "items")
-        
-        var items:[String]
-        
-        if let tempItems = itemsObject as? [String] {
-            
-            items = tempItems
-            
-            items.append(itemTextField.text!)
-            
-            print(items)
-            
-        } else {
-            
-            items = [itemTextField.text!]
-            
-        }
-        
-        UserDefaults.standard.set(items, forKey: "items")
-        
-        itemTextField.text = ""
-        
+    // reset the text field
+    itemTextField.text = ""
+  }
+  
+  func addItem(textToAdd:String)
+  {
+    // IF items does not yet exist in UserDefaults,
+    // set an empty array as the initial value
+    if (UserDefaults.standard.object(forKey: "items") == nil)
+    {
+      let emptyItems:[String] = Array()
+      UserDefaults.standard.set(emptyItems, forKey: "items")
     }
     
+    // IF I get items back from UserDefaults as an array of Strings
+    if var items = UserDefaults.standard.object(forKey: "items") as? [String]
+    {
+      // add the last item to the end
+      items.append(textToAdd)
+      
+      // replace the version stored in UserDefaults
+      UserDefaults.standard.set(items, forKey: "items")
+    }
+  }
+  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         self.view.endEditing(true)
