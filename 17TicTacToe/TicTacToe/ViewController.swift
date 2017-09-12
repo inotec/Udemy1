@@ -81,10 +81,10 @@ class ViewController: UIViewController
                         winnerLabel.text = "Cross has won"
                     }
                     
-                    UIView.animate(withDuration: 1, animations: {
+                    //UIView.animate(withDuration: 1, animations: {
                         self.winnerLabel.isHidden = false
                         self.playAgainButton.isHidden = false
-                    })
+                    //})
                     
                 }
                 
